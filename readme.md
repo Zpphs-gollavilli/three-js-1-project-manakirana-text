@@ -16,3 +16,6 @@ npm run build
 ```
 
 A simple text example for three.js text.
+
+
+By siddharth guttula for you 😊😁👍
