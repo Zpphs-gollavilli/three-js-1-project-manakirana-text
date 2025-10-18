@@ -3,6 +3,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import GUI from 'lil-gui'
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
+import { color } from 'framer-motion'
 
 /**
  * Base
@@ -64,8 +65,7 @@ fontLoader.load(
             - (textGeometry.boundingBox.max.z - textGeometry.boundingBox.min.z - 0.03) * 0.5
          )
         //  console.log(textGeometry.boundingBox)
-        const textMaterial = new THREE.MeshBasicMaterial({map : matcapTexture})
-        textMaterial.color = new THREE.Color(0xADD8E6)
+        const textMaterial = new THREE.MeshBasicMaterial({color : "#228B22"})
         const text = new THREE.Mesh(textGeometry, textMaterial)
         scene.add(text)
         textGeometry.center()  
